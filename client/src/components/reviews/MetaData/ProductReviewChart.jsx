@@ -6,7 +6,6 @@ import { ReviewsContext } from '../../../helpers/context';
 // helper function
 import { getCharLowHighVals, getMarks } from '../helperFunctions.jsx';
 
-
 const useStyles = makeStyles(() => ({
   parentContainer: {
     display: 'flex',

@@ -19,7 +19,7 @@ const recommendPercentage = () => {
   );
 
   const getRecommendPercent = () => {
-    if (revsMetaData) {
+    if (revsMetaData !== undefined) {
       if (revsMetaData.product_id) {
         setRecommendPercent(
           {
@@ -31,7 +31,7 @@ const recommendPercentage = () => {
     }
   };
 
-  const calcRecommendPercent = function(totFalse, totTrue) {
+  const calcRecommendPercent = function (totFalse, totTrue) {
     if (totTrue !== NaN && totFalse !== NaN && totTrue !== undefined && totFalse !== undefined) {
       const total = Number(totTrue) + Number(totFalse);
       const truePercent = (totTrue / total) * 100;

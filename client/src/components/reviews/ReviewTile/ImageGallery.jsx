@@ -43,8 +43,9 @@ const ImageGallery = (props) => {
       <Card className={classes.parentContainer}>
         <Grid className={classes.gridList}>
           {photosArr.map((photo) => (
-            <ImageModal key={photo.id} url={photo.url} />
+            <ImageModal key={photo} url={photo.url} />
           ))}
+          {console.log(photosArr)}
         </Grid>
       </Card>
     );
